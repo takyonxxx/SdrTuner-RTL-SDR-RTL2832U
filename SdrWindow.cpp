@@ -103,27 +103,6 @@ SdrWindow::~SdrWindow()
     delete ui;
 }
 
-void SdrWindow::changeEvent(QEvent *event)
-{
-    if (event->type() == QEvent::WindowStateChange) {
-        if (isMinimized() || !isVisible()) {
-            //emit onHide();
-            event->ignore();
-
-            return;
-        }
-        if(isVisible()) {
-           // emit onShow();
-            event->ignore();
-
-            return;
-        }
-
-    }
-
-QWidget::changeEvent(event);
-}
-
 int  SdrWindow::currentDemod() const
 {
     return ui->modeSelector->currentIndex();

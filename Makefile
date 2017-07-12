@@ -288,7 +288,6 @@ DIST          = dsp/CMakeLists.txt \
 		../../Qt/5.9/gcc_64/mkspecs/features/qt_config.prf \
 		../../Qt/5.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../Qt/5.9/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../Qt/5.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt/5.9/gcc_64/mkspecs/features/toolchain.prf \
 		../../Qt/5.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -552,7 +551,6 @@ Makefile: SdrTuner.pro ../../Qt/5.9/gcc_64/mkspecs/linux-g++/qmake.conf ../../Qt
 		../../Qt/5.9/gcc_64/mkspecs/features/qt_config.prf \
 		../../Qt/5.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../Qt/5.9/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../Qt/5.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../Qt/5.9/gcc_64/mkspecs/features/toolchain.prf \
 		../../Qt/5.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -739,7 +737,6 @@ Makefile: SdrTuner.pro ../../Qt/5.9/gcc_64/mkspecs/linux-g++/qmake.conf ../../Qt
 ../../Qt/5.9/gcc_64/mkspecs/features/qt_config.prf:
 ../../Qt/5.9/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../Qt/5.9/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 ../../Qt/5.9/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../Qt/5.9/gcc_64/mkspecs/features/toolchain.prf:
 ../../Qt/5.9/gcc_64/mkspecs/features/default_pre.prf:
@@ -1157,7 +1154,7 @@ moc_SdrWindow.cpp: ../../Qt/5.9/gcc_64/include/QtWidgets/QMainWindow \
 		SdrWindow.h \
 		moc_predefs.h \
 		../../Qt/5.9/gcc_64/bin/moc
-	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SdrWindow.h -o moc_SdrWindow.cpp
+	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SdrWindow.h -o moc_SdrWindow.cpp
 
 moc_freqctrl.cpp: ../../Qt/5.9/gcc_64/include/QtWidgets/QFrame \
 		../../Qt/5.9/gcc_64/include/QtWidgets/qframe.h \
@@ -1477,7 +1474,7 @@ moc_freqctrl.cpp: ../../Qt/5.9/gcc_64/include/QtWidgets/QFrame \
 		freqctrl.h \
 		moc_predefs.h \
 		../../Qt/5.9/gcc_64/bin/moc
-	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include freqctrl.h -o moc_freqctrl.cpp
+	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include freqctrl.h -o moc_freqctrl.cpp
 
 moc_plotter.cpp: ../../Qt/5.9/gcc_64/include/QtGui/QtGui \
 		../../Qt/5.9/gcc_64/include/QtGui/QtGuiDepends \
@@ -1822,7 +1819,7 @@ moc_plotter.cpp: ../../Qt/5.9/gcc_64/include/QtGui/QtGui \
 		plotter.h \
 		moc_predefs.h \
 		../../Qt/5.9/gcc_64/bin/moc
-	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include plotter.h -o moc_plotter.cpp
+	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include plotter.h -o moc_plotter.cpp
 
 moc_meter.cpp: ../../Qt/5.9/gcc_64/include/QtGui/QtGui \
 		../../Qt/5.9/gcc_64/include/QtGui/QtGuiDepends \
@@ -2142,7 +2139,7 @@ moc_meter.cpp: ../../Qt/5.9/gcc_64/include/QtGui/QtGui \
 		meter.h \
 		moc_predefs.h \
 		../../Qt/5.9/gcc_64/bin/moc
-	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include meter.h -o moc_meter.cpp
+	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include meter.h -o moc_meter.cpp
 
 moc_cafsk12.cpp: ../../Qt/5.9/gcc_64/include/QtCore/QObject \
 		../../Qt/5.9/gcc_64/include/QtCore/qobject.h \
@@ -2194,7 +2191,7 @@ moc_cafsk12.cpp: ../../Qt/5.9/gcc_64/include/QtCore/QObject \
 		dsp/afsk1200/cafsk12.h \
 		moc_predefs.h \
 		../../Qt/5.9/gcc_64/bin/moc
-	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include dsp/afsk1200/cafsk12.h -o moc_cafsk12.cpp
+	/home/tbiliyor/Qt/5.9/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/tbiliyor/Qt/5.9/gcc_64/mkspecs/linux-g++ -I/home/tbiliyor/Desktop/SdrTuner -I/home/tbiliyor/Desktop/SdrTuner/usr/local/lib -I/home/tbiliyor/Qt/5.9/gcc_64/include -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtWidgets -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtGui -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtNetwork -I/home/tbiliyor/Qt/5.9/gcc_64/include/QtCore -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include dsp/afsk1200/cafsk12.h -o moc_cafsk12.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -3869,49 +3866,7 @@ SdrWindow.o: SdrWindow.cpp SdrWindow.h \
 		dsp/resampler_xx.h \
 		udp_sink_f.h \
 		receivers/receiver_base.h \
-		ui_sdrwindow.h \
-		../../Qt/5.9/gcc_64/include/QtCore/QVariant \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QAction \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qaction.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qactiongroup.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QApplication \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qapplication.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qdesktopwidget.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QButtonGroup \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qbuttongroup.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QComboBox \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qcombobox.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qstyleoption.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qslider.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractslider.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qstyle.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qtabbar.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qrubberband.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QGridLayout \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qlayout.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QHeaderView \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qheaderview.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractitemview.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QLabel \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qlabel.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QPushButton \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QSlider \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QTextBrowser \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qtextbrowser.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/qtextedit.h \
-		../../Qt/5.9/gcc_64/include/QtWidgets/QWidget \
-		meter.h \
-		plotter.h \
-		../../Qt/5.9/gcc_64/include/QtGui/QFont \
-		../../Qt/5.9/gcc_64/include/QtCore/QMap
+		ui_sdrwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SdrWindow.o SdrWindow.cpp
 
 freqctrl.o: freqctrl.cpp ../../Qt/5.9/gcc_64/include/QtCore/QDebug \

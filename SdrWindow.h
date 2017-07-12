@@ -138,17 +138,16 @@ private:
 
     void getFilterPreset(int mode, int preset, int * lo, int * hi) const;    
     void selectDemod(int mode_idx);
-<<<<<<< HEAD
+
     int  currentDemod() const;     
     void setFreqCorr(double ppm);
     void setGain(QString name, double gain);
     void setOutputDevice();
-=======
+
     int  currentDemod() const;
     unsigned int getOutDeviceCount( void );    
     void setFreqCorr(double ppm);
     void setGain(QString name, double gain);
->>>>>>> 7d42062766508067671d806f954cd11be1b4ee88
 
 private slots:
     void on_push_connect_clicked();
@@ -165,7 +164,6 @@ private slots:
     void on_plotter_newFilterFreq(int low, int high);    /*! New filter width */
     void on_freqStepSelector_currentIndexChanged(const QString &arg1);
     void on_fftRateSelector_currentIndexChanged(const QString &arg1);
-    void changeEvent(QEvent *event);
     void on_udpEnabled_clicked(bool checked);
 
 private:

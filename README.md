@@ -33,13 +33,13 @@
   <meta property="fb:app_id" content="1401488693436528">
 
     
-    <meta content="https://avatars3.githubusercontent.com/u/5127977?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="takyonxxx/SdrTuner" property="og:title" /><meta content="https://github.com/takyonxxx/SdrTuner" property="og:url" /><meta content="SdrTuner -  RTL-SDR (RTL2832U) Software defined radio receiver powered by GNU Radio and Qt. " property="og:description" />
+    <meta content="https://avatars3.githubusercontent.com/u/5127977?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="takyonxxx/SdrTuner" property="og:title" /><meta content="https://github.com/takyonxxx/SdrTuner" property="og:url" /><meta content="SdrTuner - RTL-SDR (RTL2832U)" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTg3NTE0MDQ1OjlhZWZjZmMzODUzMGQxMDdjYzQ1NTAzYmRlODQ1OWMyNGFkNGNhNmYzNmJjYWRiOThlMWQ5ODkyYTkyZmRhOTQ=--ac96616a0095e2c4c769b9031e819b02596f55bd">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTg3NTE0MDQ1Ojk3NjIzOWI1ZDVhZDE0ZGZmNjEyZTg3Yjk5NGFlMjlhZWQyZjU5ODcwZmIwMzg0Mjg0ZjgwZDU5YmRlNzkyZjc=--dd40adedcdfb369ac6b15025b19a9c6cc0dd2f8c">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="BC92:1B344:764984:C389D5:5965CDA0" data-pjax-transient>
+  <meta name="request-id" content="BFA4:1B341:5BCEF2:99A475:5965D6BE" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -48,7 +48,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="BC92:1B344:764984:C389D5:5965CDA0" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="5127977" name="octolytics-actor-id" /><meta content="takyonxxx" name="octolytics-actor-login" /><meta content="faa2f1623e2b34df4267f229baa78bc2f6b27c14447756daaf01b403b05f016b" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="BFA4:1B341:5BCEF2:99A475:5965D6BE" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="5127977" name="octolytics-actor-id" /><meta content="takyonxxx" name="octolytics-actor-login" /><meta content="faa2f1623e2b34df4267f229baa78bc2f6b27c14447756daaf01b403b05f016b" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -63,7 +63,7 @@
   <meta name="user-login" content="takyonxxx">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="ZmRhNDcxOTA0ZmU5OGJlYTY0Y2U3NWExZTRmM2I2YTY2NWU5MWJiOGY5Mzc3NmI2NTM4YTUyYTA4MzUxYjdiZnx7InJlbW90ZV9hZGRyZXNzIjoiNzguMTg5LjguMTY0IiwicmVxdWVzdF9pZCI6IkJDOTI6MUIzNDQ6NzY0OTg0OkMzODlENTo1OTY1Q0RBMCIsInRpbWVzdGFtcCI6MTQ5OTg0NDAwMCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="N2M5NjIyYzE2NWZjZmQ2YjM1MGM3NDIxZjVmYWIyZmU2OTUzMGViMmE5ODZmMThiYWNhZWMyZDQxNmE4YWZmZnx7InJlbW90ZV9hZGRyZXNzIjoiNzguMTg5LjguMTY0IiwicmVxdWVzdF9pZCI6IkJGQTQ6MUIzNDE6NUJDRUYyOjk5QTQ3NTo1OTY1RDZCRSIsInRpbWVzdGFtcCI6MTQ5OTg0NjMzNSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
 
   <meta name="html-safe-nonce" content="44d9a871c08ad7dbdf9c0f4e3bfbc6d8744ef866">
@@ -73,10 +73,10 @@
 
       <link href="https://github.com/takyonxxx/SdrTuner/commits/master.atom" rel="alternate" title="Recent Commits to SdrTuner:master" type="application/atom+xml">
 
-  <meta name="description" content="SdrTuner -  RTL-SDR (RTL2832U) Software defined radio receiver powered by GNU Radio and Qt. ">
+  <meta name="description" content="SdrTuner - RTL-SDR (RTL2832U)">
   <meta name="go-import" content="github.com/takyonxxx/SdrTuner git https://github.com/takyonxxx/SdrTuner.git">
 
-  <meta content="5127977" name="octolytics-dimension-user_id" /><meta content="takyonxxx" name="octolytics-dimension-user_login" /><meta content="96868271" name="octolytics-dimension-repository_id" /><meta content="takyonxxx/SdrTuner" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="96868271" name="octolytics-dimension-repository_network_root_id" /><meta content="takyonxxx/SdrTuner" name="octolytics-dimension-repository_network_root_nwo" /><meta content="true" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
+  <meta content="5127977" name="octolytics-dimension-user_id" /><meta content="takyonxxx" name="octolytics-dimension-user_login" /><meta content="96979173" name="octolytics-dimension-repository_id" /><meta content="takyonxxx/SdrTuner" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="96979173" name="octolytics-dimension-repository_network_root_id" /><meta content="takyonxxx/SdrTuner" name="octolytics-dimension-repository_network_root_nwo" /><meta content="true" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
     <link rel="canonical" href="https://github.com/takyonxxx/SdrTuner/blob/master/README.md" data-pjax-transient>
@@ -246,7 +246,7 @@
           Settings
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DnAxgCOcUV874y5TpQt4gyEDryI3ukyhHH1j2+myDYL1f9/cT+X3rp/vEX4mUDK0voTvBioC+aH+OOf66jPsyg==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="pxdmmCvMkyOVjAITGmYCLdYIuMnCjLkBq2eJM6ThP9hcGIjER7U10jGAPT6ZPUgaSY/47d80DAFJIg0Sp2DekA==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -256,7 +256,7 @@
 </ul>
 
 
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="bppubz78xH+4OqO2NB0uMTFpdM3smw9odehEnUMwQFCVlYAzUoVijhw2nJu3RmQGru406fEjumiXrcC8QLGhGA==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="TOZZVii9Txo7W8d+9TszvdO10Ztce0/ZIM+/kRdl8q+36bcKRMTp659X+FN2YHmKTDKRv0HD+tnCijuwFOQT5w==" /></div>
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
         Sign out
       </button>
@@ -288,7 +288,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jM8SFqkqwRlk08vqf/yQS+hqw2I8uEAlSsFt3oBjIlP4+XAclQVWSjl63q9weLACNP0gD/D0aTTLp71eQFvWBQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="96868271" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jewVjm7qyymX+xbeu2YoIynYjk+0pjx1c87QC36sOEP52neEUsVcespSA5u04ghq9U9tInjqFWTyqACLvpTMFQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="96979173" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/takyonxxx/SdrTuner/subscription"
@@ -368,7 +368,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ZrawTktEiOHDWsMek9iSjLavuLwEGqsrKRwETLPZ+iV0ZAPBLMDuaEIX8nqh4GlhTqQuE8KAzCGQJQjDc8rvrA==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="N5Gmj6LAS0Ei57wEaifenF2R4oeMBXbmtHJCpG09ONglQxUAxUQtyKOqjWBYHyVxpZp0KEqfEewNS04rrS4tUQ==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -382,7 +382,7 @@
           0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dUNknoANv72EJxWYgJIpEFmvAmUfVRNOur+ZT+yPMEA5+MUJ5hLDIq5lTxiEfaw9x1WgZ9DG3eR/vUjrZ7h54A==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zdDKaFuM2P+oZN7iTikIjL5PRAvejXHA8fPY37hFmAiBa2v/PZOkYIImhGJKxo2hILXmCREev2o08Ql7M3LRqA==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -400,7 +400,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/RmJHidS9bW9G+tcO2vH7qCSZoWuFN1O6hzR1Gpkk01i3aBWCOF8rU1ITbOE2Z9ZlKKiJLmWxIYTeoUxMyWCeg==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="L7QhoG7wo1+r60DYkOza74INUNVKFZ0kNztBBkOsouawcAjoQUMqR1u45jcvXoJYtj2UdF2XhOzOXRXjGu2z0Q==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -502,9 +502,9 @@
   <div class="repository-content">
 
     
-  <a href="/takyonxxx/SdrTuner/blob/7d42062766508067671d806f954cd11be1b4ee88/README.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/takyonxxx/SdrTuner/blob/74e326f99975b4a72c28a48686f7b24fc5c6e588/README.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:55ef92139e9d5edbd61bbe39222c1890 -->
+  <!-- blob contrib key: blob_contributors:v21:1177ac7e08aa08346136f988ed699543 -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -557,7 +557,7 @@
             </a>
         </div>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7n2mz2w+WRt7k05lWhwR4MAhz866Ui6gO1GUXRbY1/dYzFtPO5PnJ7wo352te5t5hH7aBK73xn78TqfiUhwL9A==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0NZgdNof0pRHG7eyigqkocSUD2Lo2Ap7b7KVazhdzZlmZ530jbJsqICgJkp9bS44gMsaqPx94qWorabUfJkRmg==" /></div>
           <svg aria-hidden="true" class="octicon octicon-git-branch select-menu-item-icon" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -618,12 +618,12 @@
     </div>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/edit/master/README.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7WjRYz1KC8kyiWskDs3cxnyEhr68JncKo37PQYJlcX2bEP6WnvrRsgGSJjdzXnWDPmedV2yZaXgDwwrVZ4u4iA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/edit/master/README.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="WmVZ+nQ9/tvZZGYcxnW6IHB3se8/ziz5bNVjh1GSSposHXYP140koOp/Kw+75hNlMpSqBu9xMovMaKYTtHyDbw==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit this file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/delete/master/README.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QxA7oLq9DHLcNF6K5QHUmgAYNfQB7M6ztxO++Pz10Iz7mXtmb6S9VZO+4UQjjwkmcbPv/rwwppcMJd0mZP8uCw==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/takyonxxx/SdrTuner/delete/master/README.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="FURR5u9QPRdB0jPDvFk6IZJJ0cn1OkEYIcy5/MRRfxKtzREgOkmMMA5YjA161+ed4+ILw0jmKTya+toiXFuBlQ==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -631,23 +631,29 @@
 </form>  </div>
 
   <div class="file-info">
-      13 lines (10 sloc)
+      18 lines (16 sloc)
       <span class="file-info-divider"></span>
-    559 Bytes
+    965 Bytes
   </div>
 </div>
 
     
   <div id="readme" class="readme blob instapaper_body">
     <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-sdrtuner" class="anchor" href="#sdrtuner" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SdrTuner</h1>
-<p>RTL-SDR (RTL2832U)
-SdrTuner is an open source software defined radio (SDR) receiver implemented using GNU Radio and the Qt GUI toolkit.
-Currently it works on Linux.</p>
+<p>SDR TUNER RTL2832</p>
+<p>SdrTuner is an open source software defined radio (SDR) receiver implemented using GNU Radio and the Qt GUI toolkit.
+Currently it works on Linux.</p><p></p>
 <p>SdrTuner can operate as an AM/FM/SSB receiver with audio output or as an FFT-only instrument. Sw also supports UDP network streaming.
 Most common codes took from Gqrx (<a href="https://github.com/csete/gqrx">https://github.com/csete/gqrx</a>) and make a simple releable project
-for you to easly play with codes.</p>
+for you to easly play with codes.
+The app search for RTL2832 device but you can change the code for other type devices which gnu radio supports.
+All settings will be stored in settings.ini automaticaly.
+App will search the default sound card and set automaticaly.
+</p>
 <p align="center">
-  <a href="https://github.com/takyonxxx/SdrTuner/blob/master/sdrtuner.png" target="_blank"><img src="https://github.com/takyonxxx/SdrTuner/raw/master/sdrtuner.png" width="800" style="max-width:100%;"></a>
+  <a href="https://github.com/takyonxxx/SdrTuner/blob/master/sdrtuner.png">
+  <img src="https://github.com/takyonxxx/SdrTuner/raw/master/sdrtuner.png" width="800" style="max-width:100%;">
+  </a>
 </p>
 </article>
   </div>
@@ -687,7 +693,7 @@ for you to easly play with codes.</p>
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2017 <span title="0.28819s from unicorn-2731289428-8zg9s">GitHub</span>, Inc.</li>
+      <li>&copy; 2017 <span title="0.14551s from unicorn-2731289428-769vw">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
