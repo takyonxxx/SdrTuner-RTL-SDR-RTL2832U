@@ -143,11 +143,8 @@ private:
     void setFreqCorr(double ppm);
     void setGain(QString name, double gain);
     void setOutputDevice();
-
-    int  currentDemod() const;
     unsigned int getOutDeviceCount( void );    
-    void setFreqCorr(double ppm);
-    void setGain(QString name, double gain);
+
 
 private slots:
     void on_push_connect_clicked();
