@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>944</width>
+    <width>953</width>
     <height>786</height>
    </rect>
   </property>
@@ -521,7 +521,7 @@
           <string>Resolution bandwidth</string>
          </property>
          <property name="text">
-          <string>kHz</string>
+          <string>kHz (Mouse Wheel)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
