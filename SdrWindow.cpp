@@ -67,6 +67,7 @@ SdrWindow::SdrWindow(QWidget *parent) :
         ui->modeSelector->setCurrentIndex(lastMode);
         ui->push_connect->setEnabled(true);
         ui->udpEnabled->setChecked(udpEnabled);
+        ui->waterFallColor->setCurrentIndex(COLPAL_BLUE);
 
         setFftSize(fftSize);
         setFreqStep(freqStep);
@@ -77,7 +78,6 @@ SdrWindow::SdrWindow(QWidget *parent) :
             dec_timer->start(100);
         }
     }
-
 }
 
 SdrWindow *SdrWindow::instance()
@@ -787,3 +787,8 @@ void SdrWindow::iqFftTimeout()
     ui->plotter->setNewFttData(d_iirFftData, d_realFftData, fftsize);
 }
 
+void SdrWindow::on_waterFallColor_currentIndexChanged(int index)
+{
+    ui->plotter->setWaterfallPalette(index);
+    updateConf();
+}
