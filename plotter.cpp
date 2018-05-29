@@ -124,27 +124,29 @@ CPlotter::CPlotter(QWidget *parent) : QFrame(parent)
     setStatusTip(tr(STATUS_TIP));
 
     // default waterfall color scheme
-    for (int i = 0; i < 256; i++)
+    /*for (int i = 0; i < 256; i++)
     {
-        // level 0: black background
-        if (i < 20)
-            m_ColorTbl[i].setRgb(0, 0, 0);
-        // level 1: black -> blue
-        else if ((i >= 20) && (i < 70))
-            m_ColorTbl[i].setRgb(0, 0, 140*(i-20)/50);
-        // level 2: blue -> light-blue / greenish
-        else if ((i >= 70) && (i < 100))
-            m_ColorTbl[i].setRgb(60*(i-70)/30, 125*(i-70)/30, 115*(i-70)/30 + 140);
-        // level 3: light blue -> yellow
-        else if ((i >= 100) && (i < 150))
-            m_ColorTbl[i].setRgb(195*(i-100)/50 + 60, 130*(i-100)/50 + 125, 255-(255*(i-100)/50));
-        // level 4: yellow -> red
-        else if ((i >= 150) && (i < 250))
-            m_ColorTbl[i].setRgb(255, 255-255*(i-150)/100, 0);
-        // level 5: red -> white
-        else if (i >= 250)
-            m_ColorTbl[i].setRgb(255, 255*(i-250)/5, 255*(i-250)/5);
-    }
+       // level 0: black background
+       if (i < 20)
+           m_ColorTbl[i].setRgb(0, 0, 0);
+       // level 1: black -> blue
+       else if ((i >= 20) && (i < 70))
+           m_ColorTbl[i].setRgb(0, 0, 140*(i-20)/50);
+       // level 2: blue -> light-blue / greenish
+       else if ((i >= 70) && (i < 100))
+           m_ColorTbl[i].setRgb(60*(i-70)/30, 125*(i-70)/30, 115*(i-70)/30 + 140);
+       // level 3: light blue -> yellow
+       else if ((i >= 100) && (i < 150))
+           m_ColorTbl[i].setRgb(195*(i-100)/50 + 60, 130*(i-100)/50 + 125, 255-(255*(i-100)/50));
+       // level 4: yellow -> red
+       else if ((i >= 150) && (i < 250))
+           m_ColorTbl[i].setRgb(255, 255-255*(i-150)/100, 0);
+       // level 5: red -> white
+       else if (i >= 250)
+           m_ColorTbl[i].setRgb(255, 255*(i-250)/5, 255*(i-250)/5);
+    }*/
+
+    setWaterfallPalette(COLPAL_DEFAULT);
 
     m_PeakHoldActive = false;
     m_PeakHoldValid = false;
@@ -222,10 +224,39 @@ QSize CPlotter::sizeHint() const
     return QSize(180, 180);
 }
 
+void CPlotter::setWaterfallPalette(int pal)
+{
+    int     i;
+    int     j;
+
+    switch (pal)
+    {
+    default:
+    case COLPAL_DEFAULT:
+        for (i = 0, j = 0; i < 256; i++, j+=3)
+            m_ColorTbl[255-i].setRgb(PALTBL[j], PALTBL[j+1], PALTBL[j+2]);
+        break;
+
+    case COLPAL_GRAY:
+        for (i = 0; i < 256; i++)
+            m_ColorTbl[i].setRgb(i, i, i);
+        break;
+
+    case COLPAL_BLUE:
+
+        for (i = 0; i < 256-63; i++)
+            m_ColorTbl[i].setRgb(1+i, 1+i, 63+i);
+        for (i = 256-63; i< 256; i++)
+            m_ColorTbl[i].setRgb(i, i, 255);
+        break;
+    }
+}
+
+
 void CPlotter::mouseMoveEvent(QMouseEvent* event)
 {
 
-    QPoint pt = event->pos(); 
+    QPoint pt = event->pos();
     /* mouse enter / mouse leave events */
     if (m_OverlayPixmap.rect().contains(pt))
     {
@@ -245,7 +276,7 @@ void CPlotter::mouseMoveEvent(QMouseEvent* event)
             if (onTag)
             {
                 setCursor(QCursor(Qt::PointingHandCursor));
-                m_CursorCaptured = BOOKMARK;                
+                m_CursorCaptured = BOOKMARK;
             }
             else if (isPointCloseTo(pt.x(), m_DemodFreqX, m_CursorCaptureDelta))
             {
@@ -257,10 +288,10 @@ void CPlotter::mouseMoveEvent(QMouseEvent* event)
                     QToolTip::showText(event->globalPos(),
                                        QString("Demod: %1 kHz")
                                        .arg(m_DemodCenterFreq/1.e3f, 0, 'f', 3),
-                                       this);                 
+                                       this);
             }
             else if (isPointCloseTo(pt.x(), m_DemodHiCutFreqX, m_CursorCaptureDelta))
-            {                
+            {
                 // in move demod hicut region
                 if (RIGHT != m_CursorCaptured)
                     setCursor(QCursor(Qt::SizeFDiagCursor));
@@ -317,7 +348,7 @@ void CPlotter::mouseMoveEvent(QMouseEvent* event)
         }
     }
     else
-    {        
+    {
         // not in Overlay region
         if (event->buttons() == Qt::NoButton)
         {
@@ -374,7 +405,7 @@ void CPlotter::mouseMoveEvent(QMouseEvent* event)
     else if (XAXIS == m_CursorCaptured)
     {
         if (event->buttons() & (Qt::LeftButton | Qt::MidButton))
-        {            
+        {
             setCursor(QCursor(Qt::ClosedHandCursor));
             // pan viewable range or move center frequency
             int delta_px = m_Xzero - pt.x();
@@ -1319,7 +1350,7 @@ void CPlotter::drawOverlay()
 
     if (m_BookmarksEnabled)
     {
-        m_BookmarkTags.clear();       
+        m_BookmarkTags.clear();
     }
 
     if (m_CenterLineEnabled)
