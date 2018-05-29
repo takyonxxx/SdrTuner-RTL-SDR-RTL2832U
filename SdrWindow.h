@@ -162,6 +162,7 @@ private slots:
     void on_freqStepSelector_currentIndexChanged(const QString &arg1);
     void on_fftRateSelector_currentIndexChanged(const QString &arg1);
     void on_udpEnabled_clicked(bool checked);
+    void on_waterFallColor_currentIndexChanged(int index);
 
 private:
     Ui::SdrWindow *ui;
