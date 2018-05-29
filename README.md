@@ -21,7 +21,7 @@
 		</p>
 		<p align="center"><a href="https://github.com/takyonxxx/SdrTuner/blob/master/sdrtuner.png">
 		<img src="https://github.com/takyonxxx/SdrTuner/blob/master/sdrtuner.png" 
-		name="Image3" align="bottom" width="800" height="480" border="1"></a></p>
+		name="Image3" align="bottom" width="800" height="520" border="1"></a></p>
 	</div>
 </div>
 </body>
