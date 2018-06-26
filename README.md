@@ -1,7 +1,7 @@
 <div id="js-repo-pjax-container" dir="ltr">
 	<div id="readme" dir="ltr">
 		<h1><a name="user-content-sdrtuner"></a>SdrTuner</h1>
-		<p>SDR TUNER RTL2832 </p>
+		<p><b>SDR TUNER RTL2832</b> </p>
 		<p>SdrTuner is an open source software defined radio (SDR) receiver
 		implemented using GNU Radio and the Qt GUI toolkit. Currently it
 		works on Linux.	</br></br>	
