@@ -4,14 +4,15 @@
 		<p>SDR TUNER RTL2832 </p>
 		<p>SdrTuner is an open source software defined radio (SDR) receiver
 		implemented using GNU Radio and the Qt GUI toolkit. Currently it
-		works on Linux.	Below libraries should be installed on linux:			
-		sudo apt install mesa-common-dev
-		sudo apt install libglu1-mesa-dev freeglut3-dev
-		sudo apt install gnuradio-dev
-		sudo apt install gr-osmosdr
-		sudo apt install libboost-all-dev
-		sudo apt install libasound2-dev
-		sudo apt install libudev-dev		
+		works on Linux.	</br>	
+		Below libraries should be installed on linux:	</br>		
+		sudo apt install mesa-common-dev</br>	
+		sudo apt install libglu1-mesa-dev freeglut3-dev</br>	
+		sudo apt install gnuradio-dev</br>	
+		sudo apt install gr-osmosdr</br>	
+		sudo apt install libboost-all-dev</br>	
+		sudo apt install libasound2-dev</br>	
+		sudo apt install libudev-dev	</br>		
 		</p>
 		<p>SdrTuner can operate as an AM/FM/SSB receiver with audio output
 		or as an FFT-only instrument. Sw also supports UDP network
