@@ -569,15 +569,14 @@ void CFreqCtrl::drawBkGround(QPainter &Painter)
     // draw unit text
     if (m_Unit != FCTL_UNIT_NONE)
     {
-        m_UnitsRect.setRect(rect.right() - 2 * cellwidth, rect.top(),
-                            2 * cellwidth, rect.height());
+        m_UnitsRect.setRect(rect.right() - 2.5 * cellwidth, rect.top(),
+                            2.5 * cellwidth, rect.height());
         Painter.fillRect(m_UnitsRect, m_BkColor); // FIXME: not necessary?
         m_UnitsFont.setPixelSize((UNITS_SIZE_PERCENT * rect.height()) / 100);
         m_UnitsFont.setFamily("Arial");
         Painter.setFont(m_UnitsFont);
         Painter.setPen(m_UnitsColor);
-        Painter.drawText(m_UnitsRect, Qt::AlignHCenter | Qt::AlignVCenter,
-                         m_UnitString);
+        Painter.drawText(m_UnitsRect, Qt::AlignHCenter | Qt::AlignVCenter, m_UnitString);
     }
 
     // draw digits
@@ -587,7 +586,7 @@ void CFreqCtrl::drawBkGround(QPainter &Painter)
     Painter.setPen(m_DigitColor);
 
     char    dgsep = ' ';       // digit group separator
-    int     digpos = rect.right() - 2 * cellwidth - 1; // starting digit x position
+    int     digpos = rect.right() - 2.5 * cellwidth - 1; // starting digit x position
     for (int i = m_DigStart; i < m_NumDigits; i++)
     {
         if ((i > m_DigStart) && ((i % 3) == 0))
