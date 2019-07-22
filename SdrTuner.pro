@@ -122,8 +122,8 @@ LIBS += -L/usr/lib/ -lboost_system -lasound
 }
 
 win32{
-INCLUDEPATH +=C:/local/boost_1_67_0
-LIBS += -LC:/local/boost_1_67_0/stage/lib/
+INCLUDEPATH +=C:/boost_1_67_0
+LIBS += -LC:/boost_1_67_0/stage/lib/
 
 INCLUDEPATH +=C:\GNURadio-3.7\include
 LIBS += -LC:/GNURadio-3.7/lib -gnuradio-analog -gnuradio-blocks -gnuradio-digital -gnuradio-filter -gnuradio-fft -gnuradio-runtime -gnuradio-audio -gnuradio-osmosdr
