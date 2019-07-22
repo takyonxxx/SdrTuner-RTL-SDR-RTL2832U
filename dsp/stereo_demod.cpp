@@ -1,5 +1,5 @@
 #include <gnuradio/io_signature.h>
-#include <math.h>
+#include <QtMath>
 #include <iostream>
 #include <dsp/stereo_demod.h>
 

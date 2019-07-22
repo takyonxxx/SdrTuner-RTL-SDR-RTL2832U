@@ -295,6 +295,9 @@ void receiver::set_antenna(const std::string &antenna)
  * @return The actual sample rate set or 0 if there was an error with the
  *         device.
  */
+
+#if defined(Q_OS_LINUX)
+
 double receiver::set_input_rate(double rate)
 {
     double  current_rate;
@@ -302,8 +305,8 @@ double receiver::set_input_rate(double rate)
 
     current_rate = src->get_sample_rate();
     rate_has_changed = !(rate == current_rate ||
-            std::abs(rate - current_rate) < std::abs(std::min(rate, current_rate))
-            * std::numeric_limits<double>::epsilon());
+                         std::abs(rate - current_rate) < std::abs(std::min(rate, current_rate))
+                         * std::numeric_limits<double>::epsilon());
 
     tb->lock();
     d_input_rate = src->set_sample_rate(rate);
@@ -331,7 +334,7 @@ double receiver::set_input_rate(double rate)
 
     return d_input_rate;
 }
-
+#endif
 /** Set input decimation */
 unsigned int receiver::set_input_decim(unsigned int decim)
 {

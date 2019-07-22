@@ -118,15 +118,19 @@ PKGCONFIG += gnuradio-analog \
              gnuradio-osmosdr
 
 INCLUDEPATH +=usr/local/lib
-LIBS += -L/usr/lib/ -lboost_system -lasound
+LIBS += -L/usr/lib/ -lasound
 }
 
 win32{
-INCLUDEPATH +=C:/boost_1_67_0
-LIBS += -LC:/boost_1_67_0/stage/lib/
-
 INCLUDEPATH +=C:\GNURadio-3.7\include
 LIBS += -LC:/GNURadio-3.7/lib -gnuradio-analog -gnuradio-blocks -gnuradio-digital -gnuradio-filter -gnuradio-fft -gnuradio-runtime -gnuradio-audio -gnuradio-osmosdr
+
+INCLUDEPATH += C:\boost_1_67_0
+LIBS += -LC:\boost_1_67_0\lib64-msvc-14.0 \
+            -boost_serialization-vc140-mt-gd-x64-1_67 \
+            -boost_filesystem-vc140-mt-x64-1_67 \
+            -boost_system-vc140-mt-gd-x64-1_67 \
+            -boost_thread-vc140-mt-gd-x64-1_67
 }
 
 DISTFILES += \

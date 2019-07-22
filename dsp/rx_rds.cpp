@@ -1,6 +1,6 @@
 #include <QMessageBox>
 #include <QFileDialog>
-#include <cmath>
+#include <QtMath>
 #include <gnuradio/io_signature.h>
 #include <gnuradio/filter/firdes.h>
 #include <gnuradio/digital/constellation_receiver_cb.h>

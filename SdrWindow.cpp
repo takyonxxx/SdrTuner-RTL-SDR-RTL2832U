@@ -465,7 +465,7 @@ bool SdrWindow::startTuner(std::map<QString, QVariant> &devList)
 
     return deviceFound;
 }
-
+#if defined(Q_OS_LINUX)
 void SdrWindow::setOutputDevice()
 {
   void **hints;
@@ -519,7 +519,7 @@ void SdrWindow::setOutputDevice()
   }
   return;
 }
-
+#endif
 void SdrWindow::setGain(QString name, double gain)
 {
     rx->set_gain(name.toStdString(), gain);

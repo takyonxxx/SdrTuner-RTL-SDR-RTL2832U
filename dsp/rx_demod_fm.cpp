@@ -1,7 +1,7 @@
 #include <gnuradio/filter/firdes.h>
 #include <gnuradio/io_signature.h>
 #include <iostream>
-#include <math.h>
+#include <QtMath>
 
 #include "dsp/rx_demod_fm.h"
 

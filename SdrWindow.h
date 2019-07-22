@@ -8,7 +8,6 @@
 #include <iostream>
 #include <stdint.h>
 #include <string.h>
-#include <alsa/asoundlib.h>
 #include "freqctrl.h"
 #include <boost/property_tree/ini_parser.hpp>
 #include <boost/property_tree/ptree.hpp>
@@ -18,6 +17,9 @@
 #include <osmosdr/ranges.h>
 #ifndef Q_MOC_RUN
 #include "receiver.h"
+#endif
+#if defined(Q_OS_LINUX)
+#include <alsa/asoundlib.h>
 #endif
 
 #define MHZ(x)                      ((x)*1000*1000)
