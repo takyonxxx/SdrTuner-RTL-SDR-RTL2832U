@@ -1,4 +1,3 @@
-
 #include <cmath>
 #include <iostream>
 #ifndef _MSC_VER

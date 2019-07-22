@@ -1,12 +1,9 @@
-
 #include <gnuradio/hier_block2.h>
 #include <gnuradio/blocks/float_to_short.h>
 #include <gnuradio/blocks/udp_sink.h>
 #include <gnuradio/io_signature.h>
 
 #include "udp_sink_f.h"
-
-
 /*
  * Create a new instance of gr::fcd::source_c_impl and return an
  * upcasted boost shared_ptr. This is effectively the public

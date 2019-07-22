@@ -1,12 +1,3 @@
-/*
- * Half-band filter coefficients with 100 dB stop band attenuation.
- *
- * Copyright 2015 Alexandru Csete
- * All rights reserved.
- *
- * This Software is released under the Simplified BSD License.
- *
- */
 #ifndef FILTERCOEF_HBF_100_H
 #define FILTERCOEF_HBF_100_H
 

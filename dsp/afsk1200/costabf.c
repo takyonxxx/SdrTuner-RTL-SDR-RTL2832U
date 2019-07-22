@@ -1,6 +1,3 @@
-/*
- * This file is machine generated, DO NOT EDIT!
- */
 
 float costabf[1024] = {
 	 1.000000000,  0.999981165,  0.999924719,  0.999830604, 

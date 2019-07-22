@@ -1,15 +1,3 @@
-/*
- * Decimate by power-of-2 using half band filters.
- *
- * Originally from CuteSdr and modified for nanosdr
- *
- * Copyright 2010 Moe Wheatley.
- * Copyright 2015 Alexandru Csete.
- * All rights reserved.
- *
- * This Software is released under the "Simplified BSD License"
- *
- */
 #include <gnuradio/gr_complex.h>
 #include <stdio.h>
 

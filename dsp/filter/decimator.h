@@ -1,15 +1,3 @@
-/*
- * Decimate by power-of-2 classes using half band filters.
- *
- * Originally from CuteSdr and modified for nanosdr
- *
- * Copyright 2010 Moe Wheatley.
- * Copyright 2015 Alexandru Csete.
- * All rights reserved.
- *
- * This Software is released under the "Simplified BSD License"
- *
- */
 #ifndef DECIMATOR_H
 #define DECIMATOR_H 1
 
