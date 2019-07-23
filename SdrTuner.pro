@@ -106,13 +106,6 @@ HEADERS += \
 
 FORMS += \
     sdrwindow.ui
-    
-macx {
-    # FIXME: Merge into previous one
-    HEADERS += src/osxaudio/device_list.h
-    SOURCES += src/osxaudio/device_list.cpp
-}
-
 
 unix {
 PKGCONFIG += gnuradio-analog \
