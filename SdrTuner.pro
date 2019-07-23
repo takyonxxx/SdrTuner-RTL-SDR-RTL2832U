@@ -140,10 +140,13 @@ PKGCONFIG += gnuradio-analog \
              gnuradio-audio \
              gnuradio-osmosdr
 
-INCLUDEPATH += C:/boost_1_67_0
-LIBS += -LC:/boost_1_67_0/lib64-msvc-14.0
-}
+INCLUDEPATH += $$(BOOST_DIR)
+LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
+        -llibboost_system-vc120-mt-x64-1_71
+        -llibboost_program_options-vc120-mt-x64-1_71
+        -libboost_thread-vc120-mt-x64-1_71
 
+}
 
 unix:!macx {
     LIBS += -lboost_system$$BOOST_SUFFIX -lboost_program_options$$BOOST_SUFFIX
