@@ -145,11 +145,10 @@ PKGCONFIG += gnuradio-analog \
              gnuradio-osmosdr
 
 INCLUDEPATH += $$(BOOST_DIR)
-LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
-        -llibboost_system-vc120-mt-x64-1_71
-        -llibboost_program_options-vc120-mt-x64-1_71
-        -libboost_thread-vc120-mt-x64-1_71
-
+LIBS += -L$$(BOOST_DIR)\lib64-msvc-9.0 \
+        -lboost_system-vc90-1_55
+        -lboost_program_options-vc90-1_55
+        -lboost_thread-vc90-mt-1_55
 }
 
 unix:!macx {
