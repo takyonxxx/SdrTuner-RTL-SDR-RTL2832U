@@ -12,8 +12,14 @@ lessThan(QT_MAJOR_VERSION,5) {
 TARGET = SdrTuner
 TEMPLATE = app
 
+INCLUDEPATH += .
+INCPATH += src/
+CONFIG += c++1z
+
 # enable pkg-config to find dependencies
+unix:macx {
 CONFIG += link_pkgconfig
+}
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -111,8 +117,6 @@ unix {
 INCLUDEPATH +=usr/local/lib
 LIBS += -L/usr/lib/ -lasound
 }
-
-INCPATH += src/
 
 PKGCONFIG_EXISTS = $$system(pkg-config --version)
 !isEmpty(PKGCONFIG_EXISTS) {
