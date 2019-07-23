@@ -108,6 +108,29 @@ FORMS += \
     sdrwindow.ui
 
 unix {
+INCLUDEPATH +=usr/local/lib
+LIBS += -L/usr/lib/ -lasound
+}
+
+INCPATH += src/
+
+PKGCONFIG_EXISTS = $$system(pkg-config --version)
+!isEmpty(PKGCONFIG_EXISTS) {
+
+PKGCONFIG += gnuradio-analog \
+             gnuradio-blocks \
+             gnuradio-digital \
+             gnuradio-filter \
+             gnuradio-fft \
+             gnuradio-runtime \
+             gnuradio-audio \
+             gnuradio-osmosdr
+}
+
+win32{
+INCLUDEPATH +=C:\GNURadio-3.7\include
+INCLUDEPATH +=C:\GNURadio-3.7\lib\pkgconfig
+
 PKGCONFIG += gnuradio-analog \
              gnuradio-blocks \
              gnuradio-digital \
@@ -117,19 +140,10 @@ PKGCONFIG += gnuradio-analog \
              gnuradio-audio \
              gnuradio-osmosdr
 
-INCLUDEPATH +=usr/local/lib
-LIBS += -L/usr/lib/ -lasound
-}
-
-INCPATH += src/
-
-win32{
-INCLUDEPATH +=C:\GNURadio-3.7\include
-LIBS += -LC:/GNURadio-3.7/lib -gnuradio-analog -gnuradio-blocks -gnuradio-digital -gnuradio-filter -gnuradio-fft -gnuradio-runtime -gnuradio-audio -gnuradio-osmosdr
-
 INCLUDEPATH += C:/boost_1_67_0
 LIBS += -LC:/boost_1_67_0/lib64-msvc-14.0
 }
+
 
 unix:!macx {
     LIBS += -lboost_system$$BOOST_SUFFIX -lboost_program_options$$BOOST_SUFFIX
