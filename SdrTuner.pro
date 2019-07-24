@@ -132,23 +132,25 @@ PKGCONFIG += gnuradio-analog \
 }
 
 win32{
-INCLUDEPATH +=C:\GNURadio-3.7\include
-INCLUDEPATH +=C:\GNURadio-3.7\lib\pkgconfig
+LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
+        -lboost_system
+        -lboost_thread
+        -lboost_program
 
-PKGCONFIG += gnuradio-analog \
-             gnuradio-blocks \
-             gnuradio-digital \
-             gnuradio-filter \
-             gnuradio-fft \
-             gnuradio-runtime \
-             gnuradio-audio \
-             gnuradio-osmosdr
+
+LIBS += -LC:/GNURadio-3.7/lib \
+         -lgnuradio-qtgui
+         -lgnuradio-analog
+         -lgnuradio-blocks
+         -lgnuradio-digital
+         -lgnuradio-filter
+         -lgnuradio-fft
+         -lgnuradio-runtime
+         -lgnuradio-audio
+         -lgnuradio-osmosdr
 
 INCLUDEPATH += $$(BOOST_DIR)
-LIBS += -L$$(BOOST_DIR)\lib64-msvc-9.0 \
-        -lboost_system-vc90-1_55
-        -lboost_program_options-vc90-1_55
-        -lboost_thread-vc90-mt-1_55
+INCLUDEPATH += C:/GNURadio-3.7/include
 }
 
 unix:!macx {
