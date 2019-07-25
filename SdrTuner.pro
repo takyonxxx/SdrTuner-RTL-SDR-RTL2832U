@@ -13,11 +13,6 @@ TARGET = SdrTuner
 TEMPLATE = app
 CONFIG += c++11
 
-# enable pkg-config to find dependencies
-unix:!macx {
-CONFIG += link_pkgconfig
-}
-
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -111,6 +106,7 @@ FORMS += \
     sdrwindow.ui
 
 win32{
+message("win32 enabled")
 LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
         -lboost_system
         -lboost_thread
@@ -156,15 +152,22 @@ message("macx enabled")
 unix:!macx{
 message("unix enabled")
 
+PKGCONFIG_EXISTS = $$system(pkg-config --version)
+isEmpty(PKGCONFIG_EXISTS) {
+    message("pkg-config not found!")
+}
+else
+{
+    message("enable pkg-config to find dependencies")
+    CONFIG += link_pkgconfig
+}
+
     INCLUDEPATH += /usr/local/lib
     INCLUDEPATH += /usr/local/include
- 
-    LIBS += -L/usr/local/lib \
-    -lboost_system
-    -lboost_program_options
-    -lboost_thread
-    
-    LIBS += -L/usr/lib/ -lasound
+
+    LIBS += -lboost_system$$BOOST_SUFFIX -lboost_program_options$$BOOST_SUFFIX
+    LIBS += -lrt  # need to include on some distros
+    LIBS += -L/usr/local/lib -lasound
 
     PKGCONFIG += gnuradio-analog \
                  gnuradio-blocks \
@@ -175,10 +178,3 @@ message("unix enabled")
                  gnuradio-audio \
                  gnuradio-osmosdr
 }
-
-DISTFILES += \
-    dsp/CMakeLists.txt \
-    pulseaudio/CMakeLists.txt \
-    portaudio/CMakeLists.txt \
-    pulseaudio/CMakeLists.txt
-
