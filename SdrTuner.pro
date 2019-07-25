@@ -148,7 +148,8 @@ message("macx enabled")
                  gnuradio-digital \
                  gnuradio-filter \
                  gnuradio-fft \
-                 gnuradio-runtime \s
+                 gnuradio-runtime \
+                 gnuradio-audio \
                  gnuradio-osmosdr
 }
 
@@ -171,6 +172,7 @@ message("unix enabled")
                  gnuradio-filter \
                  gnuradio-fft \
                  gnuradio-runtime \
+                 gnuradio-audio \
                  gnuradio-osmosdr
 }
 
