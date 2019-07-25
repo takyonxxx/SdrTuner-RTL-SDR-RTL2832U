@@ -129,25 +129,28 @@ INCLUDEPATH += C:/GNURadio-3.7/include
 
 macx{
 message("macx enabled")
+
     INCLUDEPATH += /usr/local/lib
     INCLUDEPATH += /usr/local/include
     INCLUDEPATH += /usr/local/Cellar/boost/1.70.0/include
     INCLUDEPATH += /usr/local/Cellar/gr-osmosdr/0.1.4_8/include
+    INCLUDEPATH += /usr/local/Cellar/gnuradio/3.7.13.4_8/include
 
-    LIBS += -L//usr/local/lib \
-    -lboost_system
-    -lboost_program_options
-    -lboost_thread
+    LIBS += -L/usr/local/Cellar/boost/1.70.0/lib -lboost_system -lboost_program_options
 
-    PKGCONFIG += gnuradio-analog \
-                 gnuradio-blocks \
-                 gnuradio-digital \
-                 gnuradio-filter \
-                 gnuradio-fft \
-                 gnuradio-runtime \
-                 gnuradio-audio \
-                 gnuradio-osmosdr
+    LIBS += -L/usr/local/Cellar/gnuradio/3.7.13.4_8/lib \
+             -lgnuradio-analog
+             -lgnuradio-blocks
+             -lgnuradio-digital
+             -lgnuradio-filter
+             -lgnuradio-fft
+             -lgnuradio-runtime
+             -lgnuradio-audio
+
+    LIBS += -L/usr/local/Cellar/gr-osmosdr/0.1.4_8/lib \
+             -lgnuradio-osmosdr
 }
+
 
 unix:!macx{
 message("unix enabled")
