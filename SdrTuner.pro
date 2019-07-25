@@ -17,7 +17,7 @@ INCPATH += src/
 CONFIG += c++1z
 
 # enable pkg-config to find dependencies
-unix:macx {
+unix:!macx {
 CONFIG += link_pkgconfig
 }
 
@@ -113,24 +113,6 @@ HEADERS += \
 FORMS += \
     sdrwindow.ui
 
-unix {
-INCLUDEPATH +=usr/local/lib
-LIBS += -L/usr/lib/ -lasound
-}
-
-PKGCONFIG_EXISTS = $$system(pkg-config --version)
-!isEmpty(PKGCONFIG_EXISTS) {
-
-PKGCONFIG += gnuradio-analog \
-             gnuradio-blocks \
-             gnuradio-digital \
-             gnuradio-filter \
-             gnuradio-fft \
-             gnuradio-runtime \
-             gnuradio-audio \
-             gnuradio-osmosdr
-}
-
 win32{
 LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
         -lboost_system
@@ -153,14 +135,48 @@ INCLUDEPATH += $$(BOOST_DIR)
 INCLUDEPATH += C:/GNURadio-3.7/include
 }
 
-unix:!macx {
-    LIBS += -lboost_system$$BOOST_SUFFIX -lboost_program_options$$BOOST_SUFFIX
-    LIBS += -lrt  # need to include on some distros
+macx{
+message("macx enabled")
+    INCLUDEPATH += /usr/local/lib
+    INCLUDEPATH += /usr/local/include
+    INCLUDEPATH += /usr/local/Cellar/boost/1.70.0/include
+    INCLUDEPATH += /usr/local/Cellar/gr-osmosdr/0.1.4_8/include
+
+    LIBS += -L/usr/local/Cellar/boost/1.70.0/lib \
+    -lboost_system-mt
+    -lboost_program_options-mt
+    -lboost_thread-mt
+
+    PKGCONFIG += gnuradio-analog \
+                 gnuradio-blocks \
+                 gnuradio-digital \
+                 gnuradio-filter \
+                 gnuradio-fft \
+                 gnuradio-runtime \
+                 gnuradio-osmosdr
 }
 
-macx {
-    LIBS += -lboost_system-mt -lboost_program_options-mt
+unix:!macx{
+message("unix enabled")
+    INCLUDEPATH += /usr/local/lib
+    INCLUDEPATH += /usr/local/include
+ 
+    LIBS += -L/usr/local/lib \
+    -lboost_system-mt
+    -lboost_program_options-mt
+    -lboost_thread-mt
+    
+    LIBS += -L/usr/lib/ -lasound
+
+    PKGCONFIG += gnuradio-analog \
+                 gnuradio-blocks \
+                 gnuradio-digital \
+                 gnuradio-filter \
+                 gnuradio-fft \
+                 gnuradio-runtime \
+                 gnuradio-osmosdr
 }
+
 
 DISTFILES += \
     dsp/CMakeLists.txt \
