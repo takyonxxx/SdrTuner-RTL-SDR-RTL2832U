@@ -11,10 +11,7 @@ lessThan(QT_MAJOR_VERSION,5) {
 
 TARGET = SdrTuner
 TEMPLATE = app
-
-INCLUDEPATH += .
-INCPATH += src/
-CONFIG += c++1z
+CONFIG += c++11
 
 # enable pkg-config to find dependencies
 unix:!macx {
@@ -121,7 +118,6 @@ LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
 
 
 LIBS += -LC:/GNURadio-3.7/lib \
-         -lgnuradio-qtgui
          -lgnuradio-analog
          -lgnuradio-blocks
          -lgnuradio-digital
@@ -142,29 +138,30 @@ message("macx enabled")
     INCLUDEPATH += /usr/local/Cellar/boost/1.70.0/include
     INCLUDEPATH += /usr/local/Cellar/gr-osmosdr/0.1.4_8/include
 
-    LIBS += -L/usr/local/Cellar/boost/1.70.0/lib \
-    -lboost_system-mt
-    -lboost_program_options-mt
-    -lboost_thread-mt
+    LIBS += -L//usr/local/lib \
+    -lboost_system
+    -lboost_program_options
+    -lboost_thread
 
     PKGCONFIG += gnuradio-analog \
                  gnuradio-blocks \
                  gnuradio-digital \
                  gnuradio-filter \
                  gnuradio-fft \
-                 gnuradio-runtime \
+                 gnuradio-runtime \s
                  gnuradio-osmosdr
 }
 
 unix:!macx{
 message("unix enabled")
+
     INCLUDEPATH += /usr/local/lib
     INCLUDEPATH += /usr/local/include
  
     LIBS += -L/usr/local/lib \
-    -lboost_system-mt
-    -lboost_program_options-mt
-    -lboost_thread-mt
+    -lboost_system
+    -lboost_program_options
+    -lboost_thread
     
     LIBS += -L/usr/lib/ -lasound
 
@@ -176,7 +173,6 @@ message("unix enabled")
                  gnuradio-runtime \
                  gnuradio-osmosdr
 }
-
 
 DISTFILES += \
     dsp/CMakeLists.txt \
