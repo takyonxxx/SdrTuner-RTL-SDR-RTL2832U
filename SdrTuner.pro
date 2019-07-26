@@ -112,19 +112,18 @@ LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
         -lboost_thread
         -lboost_program
 
-
-LIBS += -LC:/GNURadio-3.7/lib \
-         -lgnuradio-analog
-         -lgnuradio-blocks
-         -lgnuradio-digital
-         -lgnuradio-filter
-         -lgnuradio-fft
-         -lgnuradio-runtime
-         -lgnuradio-audio
-         -lgnuradio-osmosdr
+    PKGCONFIG += gnuradio-analog \
+                 gnuradio-blocks \
+                 gnuradio-digital \
+                 gnuradio-filter \
+                 gnuradio-fft \
+                 gnuradio-runtime \
+                 gnuradio-audio \
+                 gnuradio-osmosdr
 
 INCLUDEPATH += $$(BOOST_DIR)
-INCLUDEPATH += C:/GNURadio-3.7/include
+INCLUDEPATH += C:\local\GNURadio-3.7\include
+INCLUDEPATH += C:\local\GNURadio-3.7/bin
 }
 
 macx{
