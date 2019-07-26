@@ -123,7 +123,7 @@ LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
 
 INCLUDEPATH += $$(BOOST_DIR)
 INCLUDEPATH += C:\local\GNURadio-3.7\include
-INCLUDEPATH += C:\local\GNURadio-3.7/bin
+INCLUDEPATH += C:\local\GNURadio-3.7\bin
 }
 
 macx{
