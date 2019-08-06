@@ -107,23 +107,30 @@ FORMS += \
 
 win32{
 message("win32 enabled")
-LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
-        -lboost_system
-        -lboost_thread
-        -lboost_program
 
-    PKGCONFIG += gnuradio-analog \
-                 gnuradio-blocks \
-                 gnuradio-digital \
-                 gnuradio-filter \
-                 gnuradio-fft \
-                 gnuradio-runtime \
-                 gnuradio-audio \
-                 gnuradio-osmosdr
 
-INCLUDEPATH += $$(BOOST_DIR)
-INCLUDEPATH += C:\local\GNURadio-3.7\include
-INCLUDEPATH += C:\local\GNURadio-3.7\bin
+LIBS += -LC:/local/GNURadio-3.7/lib/
+         -lgnuradio-analog
+         -lgnuradio-blocks
+         -lgnuradio-digital
+         -lgnuradio-filter
+         -lgnuradio-fft
+         -lgnuradio-runtime
+         -lgnuradio-audio
+         -losmosdr
+
+INCLUDEPATH += C:/local/GNURadio-3.7/include
+DEPENDPATH += C:/local/GNURadio-3.7/include
+
+win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_thread
+win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_system
+win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_program_options
+
+INCLUDEPATH += C:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0
+DEPENDPATH += C:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0
+
+INCLUDEPATH += C:/local/boost_1_71_0_b1_rc1
+DEPENDPATH += C:/local/boost_1_71_0_b1_rc1
 }
 
 macx{
