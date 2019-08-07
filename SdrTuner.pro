@@ -108,8 +108,7 @@ FORMS += \
 win32{
 message("win32 enabled")
 
-
-LIBS += -LC:/local/GNURadio-3.7/lib/
+LIBS += -L$$(GNURADIO_DIR)/lib/ \
          -lgnuradio-analog
          -lgnuradio-blocks
          -lgnuradio-digital
@@ -117,10 +116,10 @@ LIBS += -LC:/local/GNURadio-3.7/lib/
          -lgnuradio-fft
          -lgnuradio-runtime
          -lgnuradio-audio
-         -losmosdr
+         -lgnuradio-osmosdr
 
-INCLUDEPATH += C:/local/GNURadio-3.7/include
-DEPENDPATH += C:/local/GNURadio-3.7/include
+INCLUDEPATH += $$(GNURADIO_DIR)/include
+DEPENDPATH += $$(GNURADIO_DIR)/include
 
 win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_thread
 win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_system
