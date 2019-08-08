@@ -168,12 +168,13 @@ else
     CONFIG += link_pkgconfig
 }
 
-    INCLUDEPATH += /usr/local/lib
-    INCLUDEPATH += /usr/local/include
+    LIBPATH += /usr/lib
+    LIBPATH += /usr/local/lib
+    LIBPATH += /usr/lib/x86_64-linux-gnu
 
-    LIBS += -lboost_system$$BOOST_SUFFIX -lboost_program_options$$BOOST_SUFFIX
+    LIBS += -lboost_system -lboost_program_options
     LIBS += -lrt  # need to include on some distros
-    LIBS += -L/usr/local/lib -lasound
+    LIBS += -lasound
 
     PKGCONFIG += gnuradio-analog \
                  gnuradio-blocks \
@@ -181,6 +182,8 @@ else
                  gnuradio-filter \
                  gnuradio-fft \
                  gnuradio-runtime \
-                 gnuradio-audio \
+                 gnuradio-audio\
                  gnuradio-osmosdr
+
+    INCLUDEPATH += /usr/local/include
 }
