@@ -105,59 +105,6 @@ HEADERS += \
 FORMS += \
     sdrwindow.ui
 
-win32{
-message("win32 enabled")
-
-LIBS += -L$$(GNURADIO_DIR)/lib/ \
-         -lgnuradio-analog
-         -lgnuradio-blocks
-         -lgnuradio-digital
-         -lgnuradio-filter
-         -lgnuradio-fft
-         -lgnuradio-runtime
-         -lgnuradio-audio
-         -lgnuradio-osmosdr
-
-INCLUDEPATH += $$(GNURADIO_DIR)/include
-DEPENDPATH += $$(GNURADIO_DIR)/include
-
-win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_thread
-win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_system
-win32: LIBS += -LC:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0/ -lboost_program_options
-
-INCLUDEPATH += C:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0
-DEPENDPATH += C:/local/boost_1_71_0_b1_rc1/lib64-msvc-12.0
-
-INCLUDEPATH += C:/local/boost_1_71_0_b1_rc1
-DEPENDPATH += C:/local/boost_1_71_0_b1_rc1
-}
-
-macx{
-message("macx enabled")
-
-LIBS += /usr/local/lib/librtlsdr.dylib /usr/local/lib/libfftw3.dylib /usr/local/lib/libportaudio.dylib
-
-LIBS += -L/usr/local/Cellar/gnuradio/3.7.13.4_8/lib \
-     -lgnuradio-analog
-     -lgnuradio-blocks
-     -lgnuradio-digital
-     -lgnuradio-filter
-     -lgnuradio-fft
-     -lgnuradio-runtime
-     -lgnuradio-audio
-
-LIBS += -L/usr/local/Cellar/gr-osmosdr/0.1.4_8/lib \
-         -lgnuradio-osmosdr
-
-INCLUDEPATH += /usr/local/include
-INCLUDEPATH += /usr/local/Cellar/gr-osmosdr/0.1.4_8/include
-INCLUDEPATH += /usr/local/Cellar/gnuradio/3.7.13.4_8/include
-}
-
-
-unix:!macx{
-message("unix enabled")
-
 PKGCONFIG_EXISTS = $$system(pkg-config --version)
 isEmpty(PKGCONFIG_EXISTS) {
     message("pkg-config not found!")
@@ -167,6 +114,56 @@ else
     message("enable pkg-config to find dependencies")
     CONFIG += link_pkgconfig
 }
+
+win32{
+message("win32 enabled")
+LIBS += -L$$(BOOST_DIR)\lib64-msvc-12.0 \
+        -lboost_system
+        -lboost_thread
+        -lboost_program
+
+
+LIBS += -LC:/GNURadio-3.7/lib \
+         -lgnuradio-analog
+         -lgnuradio-blocks
+         -lgnuradio-digital
+         -lgnuradio-filter
+         -lgnuradio-fft
+         -lgnuradio-runtime
+         -lgnuradio-audio
+         -lgnuradio-osmosdr
+
+INCLUDEPATH += $$(BOOST_DIR)
+INCLUDEPATH += C:/GNURadio-3.7/include
+}
+
+macx{
+message("macx enabled")
+
+    INCLUDEPATH += /usr/local/lib
+    INCLUDEPATH += /usr/local/include
+    INCLUDEPATH += /usr/local/Cellar/boost/1.70.0/include
+    INCLUDEPATH += /usr/local/Cellar/gr-osmosdr/0.1.4_8/include
+
+    LIBS += -L/usr/local/lib \
+    -lboost_system
+    -lboost_program_options
+    -lboost_thread
+
+    LIBS += -L/usr/local/Cellar/gr-osmosdr/0.1.4_8/lib -lgnuradio-osmosdr
+
+    PKGCONFIG += gnuradio-analog \
+                 gnuradio-blocks \
+                 gnuradio-digital \
+                 gnuradio-filter \
+                 gnuradio-fft \
+                 gnuradio-runtime \
+                 gnuradio-audio
+
+}
+
+unix:!macx{
+message("unix enabled")
 
     LIBPATH += /usr/lib
     LIBPATH += /usr/local/lib
@@ -182,7 +179,7 @@ else
                  gnuradio-filter \
                  gnuradio-fft \
                  gnuradio-runtime \
-                 gnuradio-audio\
+                 gnuradio-audio \
                  gnuradio-osmosdr
 
     INCLUDEPATH += /usr/local/include
