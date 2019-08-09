@@ -476,8 +476,7 @@ void CPlotter::mouseMoveEvent(QMouseEvent* event)
             {
                 m_DemodCenterFreq = roundFreq(freqFromX(pt.x() - m_GrabPosition),
                                               m_ClickResolution );
-                emit newDemodFreq(m_DemodCenterFreq,
-                                  m_DemodCenterFreq - m_CenterFreq);
+                emit newDemodFreq(m_DemodCenterFreq, m_DemodCenterFreq - m_CenterFreq);
                 updateOverlay();
                 m_PeakHoldValid = false;
             }
@@ -674,7 +673,7 @@ void CPlotter::mousePressEvent(QMouseEvent * event)
                     m_DemodCenterFreq = roundFreq(freqFromX(pt.x()), m_ClickResolution);
 
                 // if cursor not captured set demod frequency and start demod box capture
-                emit newDemodFreq(m_DemodCenterFreq, m_DemodCenterFreq - m_CenterFreq);
+                //emit newDemodFreq(m_DemodCenterFreq, m_DemodCenterFreq - m_CenterFreq);
 
                 // save initial grab postion from m_DemodFreqX
                 // setCursor(QCursor(Qt::CrossCursor));
@@ -688,7 +687,7 @@ void CPlotter::mousePressEvent(QMouseEvent * event)
                 m_CenterFreq = roundFreq(freqFromX(pt.x()), m_ClickResolution);
                 m_DemodCenterFreq = m_CenterFreq;
                 emit newCenterFreq(m_CenterFreq);
-                emit newDemodFreq(m_DemodCenterFreq, m_DemodCenterFreq - m_CenterFreq);
+                //emit newDemodFreq(m_DemodCenterFreq, m_DemodCenterFreq - m_CenterFreq);
                 drawOverlay();
             }
             else if (event->buttons() == Qt::RightButton)
