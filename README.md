@@ -15,8 +15,7 @@
 		sudo apt install libudev-dev	</br>	
 		sudo apt install libfftw3-dev </br>	
 		sudo apt install libportaudio2 </br>
-		sudo apt install portaudio19-dev </br>
-
+		sudo apt install portaudio19-dev 
 		</p>
 		<p>SdrTuner can operate as an AM/FM/SSB receiver with audio output
 		or as an FFT-only instrument. Sw also supports UDP network
