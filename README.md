@@ -24,10 +24,7 @@
 		<p>Most common codes took from Gqrx (<a href="https://github.com/csete/gqrx">https://github.com/csete/gqrx</a>)
 		and make a simple releable project for you to easly play with
 		codes. 
-		</p>
-		<p>The app search for RTL2832 device but you can change the code
-		for other type devices which gnu radio supports. 
-		</p>
+		</p>		
 		<p>All settings will be stored in settings.ini automaticaly. App
 		will search the default sound card and set automaticaly. 
 		</p>
