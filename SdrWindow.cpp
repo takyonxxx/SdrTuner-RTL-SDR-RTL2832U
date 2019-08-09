@@ -39,7 +39,7 @@ SdrWindow::SdrWindow(QWidget *parent) :
     initSpectrumGraph();
 
     rx = new receiver("", "", 1);
-   // rx->set_rf_freq(frequency);
+    // rx->set_rf_freq(frequency);
 
     /* timer for data decoders */
     dec_timer = new QTimer(this);
@@ -115,7 +115,7 @@ void SdrWindow::on_udpEnabled_clicked(bool checked)
     if(udpEnabled)
         startAudioStreaming(udpHost,udpPort);
     else
-         stopAudioStreaming();
+        stopAudioStreaming();
 
     updateConf();
 }
@@ -129,14 +129,14 @@ void SdrWindow::on_push_connect_clicked()
         iq_fft_timer->start(1000/fftrate);
         ui->plotter->setFftRate(fftrate);
         if(udpEnabled)
-        startAudioStreaming(udpHost,udpPort);
+            startAudioStreaming(udpHost,udpPort);
 
         ui->push_connect->setText("DisConnect");
     }
     else
     {
         if(udpEnabled)
-        stopAudioStreaming();
+            stopAudioStreaming();
 
         meter_timer->stop();
         iq_fft_timer->stop();
@@ -261,7 +261,7 @@ void SdrWindow::decoderTimeout()
     unsigned int num;
 
     rx->get_sniffer_data(&buffer[0], num);
-   // printf("buffer: %f\n",buffer[0]);
+    // printf("buffer: %f\n",buffer[0]);
 }
 
 /** Start streaming audio over UDP. */
@@ -290,11 +290,11 @@ void SdrWindow::initObjects()
     ui->push_connect->setStyleSheet("color: white;background-color: CadetBlue;");
     ui->text_terminal->setStyleSheet("font: 12px; color: #00cccc; background-color: #001a1a;");
 
-    ui->filterFreq->setup(0, 0 ,KHZ(1000), 1,FCTL_UNIT_KHZ);
-    ui->filterFreq->setDigitColor(QColor("#ff9933"));
+    ui->filterFreq->setup(0, 0 ,1000e3, 1, FCTL_UNIT_KHZ);
+    ui->filterFreq->setDigitColor(QColor("#3996E9"));
     ui->filterFreq->setFrequency(0);
 
-    ui->freqCtrl->setup(0, 0, 9999e6, 1, FCTL_UNIT_MHZ);
+    ui->freqCtrl->setup(0, 0, 999e8, 1, FCTL_UNIT_MHZ);
     ui->freqCtrl->setDigitColor(QColor("#ff9933"));
     ui->freqCtrl->setFrequency(frequency);
 }
@@ -312,8 +312,8 @@ void SdrWindow::initSpectrumGraph()
 
     ui->plotter->setFftRange(-140.0f, 20.0f);
     ui->plotter->setPandapterRange(-140.f, 20.f);
-   // ui->plotter->setHiLowCutFrequencies(m_LowCutFreq,m_HiCutFreq);
-   // ui->plotter->setDemodRanges(m_LowCutFreq, -KHZ(5), KHZ(5),m_HiCutFreq, true);
+    // ui->plotter->setHiLowCutFrequencies(m_LowCutFreq,m_HiCutFreq);
+    // ui->plotter->setDemodRanges(m_LowCutFreq, -KHZ(5), KHZ(5),m_HiCutFreq, true);
 
     ui->plotter->setFreqUnits(1000);
     ui->plotter->setPercent2DScreen(50);
@@ -338,10 +338,10 @@ void SdrWindow::AppentTextBrowser(const char* stringBuffer)
 ///
 void SdrWindow::initConf()
 {    try
-    {
+     {
         getStatusFromConfigurationFile();
-    }
-    catch(std::exception const& ex)
+     }
+     catch(std::exception const& ex)
     {
         printf("File settings.ini not found.\nCreating settings.ini file\n");
         createConfigurationFile();
@@ -468,56 +468,56 @@ bool SdrWindow::startTuner(std::map<QString, QVariant> &devList)
 #if defined(Q_OS_LINUX)
 void SdrWindow::setOutputDevice()
 {
-  void **hints;
-  const char *ifaces[] = {"pcm", 0};
-  int index = 0;
-  void **str;
-  char *name;
-  char *desc;
-  int devIdx = 0;
-  size_t tPos,tPos1;
+    void **hints;
+    const char *ifaces[] = {"pcm", 0};
+    int index = 0;
+    void **str;
+    char *name;
+    char *desc;
+    int devIdx = 0;
+    size_t tPos,tPos1;
 
-  snd_config_update();
+    snd_config_update();
 
-  while (ifaces[index]) {
+    while (ifaces[index]) {
 
-    printf("\Querying interface %s \n", ifaces[index]);
-    if (snd_device_name_hint(-1, ifaces[index], &hints) < 0)
-    {
-      printf("Querying devices failed for %s.\n", ifaces[index]);
-      index++;
-      continue;
+        printf("\Querying interface %s \n", ifaces[index]);
+        if (snd_device_name_hint(-1, ifaces[index], &hints) < 0)
+        {
+            printf("Querying devices failed for %s.\n", ifaces[index]);
+            index++;
+            continue;
+        }
+        str = hints;
+        while (*str)
+        {
+            name = snd_device_name_get_hint(*str, "NAME");
+            desc = snd_device_name_get_hint(*str, "DESC");
+
+            string tNameStr = "";
+            if (name != NULL)
+                tNameStr = string(name);
+
+            // search for "default:", if negative result then go on searching for next device
+            if ((tNameStr != "") && ((tPos = tNameStr.find("default:")) != string::npos) && ((tPos1 = tNameStr.find("CARD=")) != string::npos))
+            {
+                printf("Deafult Sound Card : %d : %s\n%s\n",devIdx, name,desc);
+                QString outdev = name;
+                rx->set_output_device(outdev.toStdString());
+                snd_device_name_free_hint(hints);
+
+                return;
+            }
+
+            free(name);
+            free(desc);
+            devIdx++;
+            str++;
+        }
+        index++;
+        snd_device_name_free_hint(hints);
     }
-    str = hints;
-    while (*str)
-    {
-      name = snd_device_name_get_hint(*str, "NAME");
-      desc = snd_device_name_get_hint(*str, "DESC");
-
-      string tNameStr = "";
-      if (name != NULL)
-          tNameStr = string(name);
-
-      // search for "default:", if negative result then go on searching for next device
-      if ((tNameStr != "") && ((tPos = tNameStr.find("default:")) != string::npos) && ((tPos1 = tNameStr.find("CARD=")) != string::npos))
-      {
-          printf("Deafult Sound Card : %d : %s\n%s\n",devIdx, name,desc);
-          QString outdev = name;
-          rx->set_output_device(outdev.toStdString());
-          snd_device_name_free_hint(hints);
-
-          return;
-      }
-
-      free(name);
-      free(desc);
-      devIdx++;
-      str++;
-    }
-    index++;
-    snd_device_name_free_hint(hints);
-  }
-  return;
+    return;
 }
 #endif
 void SdrWindow::setGain(QString name, double gain)
@@ -582,7 +582,7 @@ void SdrWindow::selectDemod(int mode_idx)
         rx->set_demod(receiver::RX_DEMOD_WFM_S);
         click_res = 100;
         break;
-       break;
+        break;
     case MODE_WFM_STEREO_OIRT:
         /* Broadcast FM */
         ui->plotter->setDemodRanges(-120e3, -10000, 10000, 120e3, true);
